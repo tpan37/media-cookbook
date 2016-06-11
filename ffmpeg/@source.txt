@@ -1,0 +1,2 @@
+Source: https://ffmpeg.zeranoe.com/builds/
+Version: ffmpeg-20160531-git-a1953d4-win32-static
