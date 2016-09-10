@@ -13,7 +13,7 @@ Opt("GUIOnEventMode", 1)
 
 Global Enum $RC_FILEPATH = 0, $RC_TITLE, $RC_DESC, $RC_INPUTS
  
-Global $hGui = GUICreate("Media Cookbook V0.1.0", 780, 580, -1, -1, $WS_OVERLAPPEDWINDOW, $WS_EX_ACCEPTFILES)
+Global $hGui = GUICreate("Media Cookbook V0.1.1", 780, 580, -1, -1, $WS_OVERLAPPEDWINDOW, $WS_EX_ACCEPTFILES)
 GUISetOnEvent($GUI_EVENT_DROPPED, "_EVENT_DROPPED")
 GUISetOnEvent($GUI_EVENT_CLOSE, "_EVENT_CLOSE")
 
@@ -101,8 +101,17 @@ Func ParseRecipe($filepath)
 	Return $recipe
 EndFunc
 
+Func getRecipeSelIndex()
+	Local $selstr = GUICtrlRead($hRecipeList)
+	For $i = 0 to UBound($recipes)-1
+		Local $recipe = $recipes[$i]
+		If $selstr = $recipe[$RC_TITLE] Then Return $i
+	Next
+	Return -1
+EndFunc
+
 Func OnRecipeListClick()
-	Local $selected = _GUICtrlListBox_GetCurSel($hRecipeList)
+	Local $selected = getRecipeSelIndex()
 	If $selected < 0 Then Return
 	Local $recipe = $recipes[$selected]
 	GUICtrlSetData($hRecipeDesc, $recipe[$RC_DESC])
@@ -178,7 +187,7 @@ Func OnSelectFilePathButtonClick()
 EndFunc
 
 Func OnGoButtonClick()
-	Local $selected = _GUICtrlListBox_GetCurSel($hRecipeList)
+	Local $selected = GetRecipeSelIndex()
 	Local $recipe = $recipes[$selected]
 	Local $filepath = $recipe[$RC_FILEPATH]
 	Local $script
