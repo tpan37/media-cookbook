@@ -1,0 +1,1 @@
+..\Aut2EXE\Aut2EXE /in mcookbook.au3 /out mcookbook.exe /icon mcookbook.ico /gui

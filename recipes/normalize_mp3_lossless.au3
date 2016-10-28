@@ -1,9 +1,11 @@
 #comments-start
-@title Normalize volume of MP3 files (lossless)
+@title Normalize volume of MP3 files using mp3gain (lossless)
 @desc-start
 Normalize volume of MP3 files using mp3gain (lossless).
 
 All files are set to equal loudness (automatic track gain)
+
+Overwrites original file(s)
 #desc-end
 @input @filelist Input files
 #comments-end

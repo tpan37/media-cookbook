@@ -1,9 +1,11 @@
 #comments-start
-@title Normalize volume of MP4/M4A files (lossless)
+@title Normalize volume of MP4/M4A files using aacgain (lossless)
 @desc-start
 Normalize volume of MP4 video or M4A audio files (lossless) using aacgain. Raw AAC files/HE-AAC/SBR are not supported.
 
 This recipe is useful for making MP4 video files with a very soft audio track sound louder.
+
+Overwrites original file(s)
 #desc-end
 @input @filelist Input files
 #comments-end

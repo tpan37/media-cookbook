@@ -1,0 +1,11 @@
+ffmpeg version 2.8.5 Copyright (c) 2000-2016 the FFmpeg developers
+built with gcc 5.2.0 (GCC)
+configuration: --enable-gpl --enable-version3 --disable-w32threads --enable-avisynth --enable-bzlib --enable-fontconfig --enable-frei0r --enable-gnutls --enable-iconv --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libdcadec --enable-libfreetype --enable-libgme --enable-libgsm --enable-libilbc --enable-libmodplug --enable-libmp3lame --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-libopus --enable-librtmp --enable-libschroedinger --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libtwolame --enable-libvidstab --enable-libvo-aacenc --enable-libvo-amrwbenc --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs --enable-libxvid --enable-lzma --enable-decklink --enable-zlib
+libavutil      54. 31.100 / 54. 31.100
+libavcodec     56. 60.100 / 56. 60.100
+libavformat    56. 40.101 / 56. 40.101
+libavdevice    56.  4.100 / 56.  4.100
+libavfilter     5. 40.101 /  5. 40.101
+libswscale      3.  1.101 /  3.  1.101
+libswresample   1.  2.101 /  1.  2.101
+libpostproc    53.  3.100 / 53.  3.100
